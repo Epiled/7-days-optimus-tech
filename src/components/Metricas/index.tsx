@@ -1,4 +1,4 @@
-import itens from 'data/infos.json';
+import itens from 'data/metricas.json';
 import styles from './Informacoes.module.scss';
 import Item from './Item';
 

@@ -1,9 +1,8 @@
-import itens from 'data/infos.json';
 import styles from './Item.module.scss';
 import { useState, useEffect, FC } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { Item } from 'types/Item';
 
-type Item = typeof itens[0];
 
 const Infos: FC<Item> = (props) => {
 

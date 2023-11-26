@@ -12,6 +12,9 @@ interface Props {
 
 export default function SecaoBase({ destaque, titulo, texto, principal = false, imagem }: Props) {
 
+  const imagemRecebida = new Image;
+  imagemRecebida.src = String(imagem);
+
   return (
     <section className={classNames(
       styles.secaoBase,
@@ -28,7 +31,12 @@ export default function SecaoBase({ destaque, titulo, texto, principal = false, 
       <p>
         {texto}
       </p>
-      {imagem && <img className={styles.secaoBase__imagem} src={imagem} />}
+      {imagem && <img
+        className={styles.secaoBase__imagem}
+        src={imagem}
+        width={imagemRecebida.width}
+        height={imagemRecebida.height}
+      />}
     </section>
   );
 }
