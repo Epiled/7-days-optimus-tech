@@ -1,16 +1,12 @@
-import itens from 'data/infos.json'; 
-
-export type Itens = typeof itens;
-
-export type Item = typeof itens[0];
+import itens from 'data/infos.json';
+import styles from './Informacoes.module.scss';
+import Item from './Item';
 
 export default function Infos() {
   return (
-    <section>
+    <section className={styles.informacoes}>
       {itens.map((item, index) => (
-        <div key={index}>
-          {item.titulo}
-        </div>
+        <Item {...item} key={index} />
       ))}
     </section>
   );

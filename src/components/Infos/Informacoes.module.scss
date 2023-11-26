@@ -1,0 +1,6 @@
+.informacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));;
+  gap: 3.2rem;
+  margin-bottom: 9.6rem;
+}

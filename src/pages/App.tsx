@@ -1,6 +1,7 @@
 import PaginaPadrao from 'components/PaginaPadrao';
 import Menu from '../components/Menu';
 import SecaoBase from 'components/SecaoBase';
+import Infos from 'components/Infos';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           texto={'Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.'}
           principal={true}
         />
+        <Infos />
       </PaginaPadrao>
     </div>
   );
