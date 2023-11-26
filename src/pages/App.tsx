@@ -1,7 +1,7 @@
 import PaginaPadrao from 'components/PaginaPadrao';
 import Menu from '../components/Menu';
 import SecaoBase from 'components/SecaoBase';
-import Infos from 'components/Infos';
+import Metricas from 'components/Metricas';
 
 function App() {
   return (
@@ -14,7 +14,13 @@ function App() {
           texto={'Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.'}
           principal={true}
         />
-        <Infos />
+        <Metricas />
+        <SecaoBase
+          destaque={'Vagas abertas!'}
+          titulo={'Estamos procurando por talentos'}
+          texto={'Somos uma equipe 100% remota com pessoas do Brasil inteiro.'}
+          imagem={'/assets/imgs/procura-talentos.png'}
+        />
       </PaginaPadrao>
     </div>
   );
