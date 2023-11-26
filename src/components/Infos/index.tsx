@@ -6,7 +6,7 @@ export default function Infos() {
   return (
     <section className={styles.informacoes}>
       {itens.map((item, index) => (
-        <Item {...item} key={index} />
+        <Item key={index} {...item} />
       ))}
     </section>
   );

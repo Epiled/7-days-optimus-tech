@@ -2,15 +2,15 @@
 @import "styles/breakpoints";
 
 .botaoHamburguer {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 3rem;
   height: 2rem;
   cursor: pointer;
-
-  @media screen and (max-width: $tablet) {
-    display: flex;
+  
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
 

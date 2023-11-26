@@ -7,6 +7,7 @@
   align-items: center;
   color: $gray-500;
   height: 8rem;
+  border-bottom: .1rem solid $vermelho;
 
   @media screen and (max-width: $tablet) {
     position: fixed;
@@ -15,7 +16,10 @@
     width: 100%;
     padding: 0 3.2rem;
     justify-content: space-between;
-    border-bottom: .1rem solid $vermelho;
+  }
+
+  @media screen and (min-width: $tablet) {
+    border: 0;
   }
 
   a {
@@ -29,6 +33,7 @@
 
     @media screen and (min-width: $tablet) {
       flex-direction: row;
+      align-items: center;
     }
 
     &:nth-child(2) {
@@ -47,17 +52,20 @@
     &--links {
       gap: 1.6rem;
 
+      a:last-of-type {
+        margin-bottom: 1.6rem;
+      }
+
       @media screen and (min-width: $tablet) {
         margin-left: 12rem;
         flex-direction: row;
         gap: 3.2rem;
-      }
 
-      @media screen and (max-width: $tablet) {
         a:last-of-type {
-          margin-bottom: 1.6rem;
+          margin-bottom: 0rem;
         }
       }
+
     }
   }
 
@@ -77,21 +85,22 @@
     top: 7.9rem;
     left: 0;
     background: $base-white;
-
-    @media screen and (max-width: $tablet) {
-      padding: 1.6rem 3.2rem;
-      border-right: .1rem solid $vermelho;
-      border-bottom: .1rem solid $vermelho;
-      width: 25rem;
-      transform: translateX(-25rem);
-      transition: transform .5s;
-      border-bottom-right-radius: .5rem;
-    }
+    padding: 1.6rem 3.2rem;
+    border-right: .1rem solid $vermelho;
+    border-bottom: .1rem solid $vermelho;
+    width: 25rem;
+    transform: translateX(-25rem);
+    transition: transform .5s;
+    border-bottom-right-radius: .5rem;
 
     @media screen and (min-width: $tablet) {
       position: static;
       flex-direction: row;
       align-items: center;
+      transform: translate(0);
+      padding: 0;
+      border: 0;
+      background: none;
     }
 
     &--ativo {
