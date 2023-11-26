@@ -1,0 +1,23 @@
+[
+  {
+    "numero": "400",
+    "titulo": "Projetos concluídos",
+    "texto": "Nós ajudamos a construir mais de 400 projetos incríveis.",
+    "milhar": false
+  }, {
+    "numero": "Colaboradores",
+    "titulo": "100",
+    "texto": "Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.",
+    "milhar": false
+  }, {
+    "numero": "Downloads",
+    "titulo": "20",
+    "texto": "Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.",
+    "milhar": true
+  }, {
+    "numero": "Reviews 5 estrelas",
+    "titulo": "500",
+    "texto": "Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.",
+    "milhar": false
+  }
+]
