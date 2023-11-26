@@ -8,6 +8,7 @@
   color: $gray-500;
   height: 8rem;
   border-bottom: .1rem solid $vermelho;
+  background-color: $base-white;
 
   @media screen and (max-width: $tablet) {
     position: fixed;
@@ -25,6 +26,7 @@
   a {
     color: $gray-500;
     text-decoration: none;
+    backface-visibility: hidden;
   }
 
   &__container {
