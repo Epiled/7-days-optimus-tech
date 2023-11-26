@@ -1,0 +1,36 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.botaoHamburguer {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2rem;
+  cursor: pointer;
+
+  @media screen and (max-width: $tablet) {
+    display: flex;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 2.5rem;
+  height: .3rem;
+  background-color: $vermelho;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-.5rem, .6rem);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-.5rem, -.6rem);
+}

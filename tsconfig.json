@@ -18,9 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
   },
   "include": [
-    "src"
+    "src",
+    "src/svg.d.ts"
   ]
 }

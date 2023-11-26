@@ -1,0 +1,101 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.menu {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: $gray-500;
+  height: 8rem;
+
+  @media screen and (max-width: $tablet) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 3.2rem;
+    justify-content: space-between;
+    border-bottom: .1rem solid $vermelho;
+  }
+
+  a {
+    color: $gray-500;
+    text-decoration: none;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+    }
+
+    &:nth-child(2) {
+      gap: 1.2rem;
+
+      @media screen and (min-width: $tablet) {
+        align-items: center;
+      }
+    }
+
+    &--logo {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--links {
+      gap: 1.6rem;
+
+      @media screen and (min-width: $tablet) {
+        margin-left: 12rem;
+        flex-direction: row;
+        gap: 3.2rem;
+      }
+
+      @media screen and (max-width: $tablet) {
+        a:last-of-type {
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &__marca {
+    color: $gray;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-left: .8rem;
+  }
+
+  &__barra {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    position: absolute;
+    top: 7.9rem;
+    left: 0;
+    background: $base-white;
+
+    @media screen and (max-width: $tablet) {
+      padding: 1.6rem 3.2rem;
+      border-right: .1rem solid $vermelho;
+      border-bottom: .1rem solid $vermelho;
+      width: 25rem;
+      transform: translateX(-25rem);
+      transition: transform .5s;
+      border-bottom-right-radius: .5rem;
+    }
+
+    @media screen and (min-width: $tablet) {
+      position: static;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--ativo {
+      transform: translateX(0);
+    }
+  }
+}
