@@ -20,7 +20,9 @@ function App() {
           titulo={'Estamos procurando por talentos'}
           texto={'Somos uma equipe 100% remota com pessoas do Brasil inteiro.'}
           imagem={'/assets/imgs/procura-talentos.png'}
-        />
+        >
+          <h1>Oi</h1>
+        </SecaoBase>
       </PaginaPadrao>
     </div>
   );

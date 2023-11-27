@@ -6,11 +6,12 @@ interface Props {
   destaque?: string,
   titulo: string,
   texto: string,
-  principal?: boolean
-  imagem?: string
+  principal?: boolean,
+  imagem?: string,
+  children?: React.ReactNode
 }
 
-export default function SecaoBase({ destaque, titulo, texto, principal = false, imagem }: Props) {
+export default function SecaoBase({ destaque, titulo, texto, principal = false, imagem, children }: Props) {
 
   const imagemRecebida = new Image;
   imagemRecebida.src = String(imagem);
@@ -37,6 +38,7 @@ export default function SecaoBase({ destaque, titulo, texto, principal = false, 
         width={imagemRecebida.width}
         height={imagemRecebida.height}
       />}
+      {children}
     </section>
   );
 }
