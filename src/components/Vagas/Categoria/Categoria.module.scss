@@ -1,0 +1,19 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.categoria {
+
+  &__titulo {
+    color: $gray-900;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}

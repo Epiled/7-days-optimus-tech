@@ -2,6 +2,7 @@ import PaginaPadrao from 'components/PaginaPadrao';
 import Menu from '../components/Menu';
 import SecaoBase from 'components/SecaoBase';
 import Metricas from 'components/Metricas';
+import Vagas from 'components/Vagas';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           texto={'Somos uma equipe 100% remota com pessoas do Brasil inteiro.'}
           imagem={'/assets/imgs/procura-talentos.png'}
         >
-          <h1>Oi</h1>
+          <Vagas />
         </SecaoBase>
       </PaginaPadrao>
     </div>
