@@ -8,7 +8,7 @@ Participei do desafio de código <a href="https://7daysofcode.io/matricula/html-
 | :label: Tecnologias | react, typescript, sass, css modules, html, css, js, node
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![thumb-aluroni-2](https://github.com/Epiled/aluroni-2-router/assets/55258483/4be912b8-cf45-4a92-9431-1e4e8474ac89#vitrinedev)
+![optimus-tech](https://github.com/Epiled/7-days-optimus-tech/assets/55258483/afc823f8-3c22-4d75-8540-abac28d99fcc#vitrinedev)
 
 <h2 id="detalhes-do-projeto"> 📃 Detalhes do projeto </h2>
 
@@ -54,9 +54,9 @@ Figma: <a href="https://www.figma.com/file/AsxsdGTpdD7sooRFofJz3z/7daysOfCode-HT
 
 <h3 id="home"> Home </h3>
 
-https://github.com/Epiled/aluroni-2-router/assets/55258483/65004157-72ab-4979-9542-c64583196d21
+https://github.com/Epiled/7-days-optimus-tech/assets/55258483/14c8fe0c-0247-4755-98cd-3106d9c12100
 
-https://github.com/Epiled/aluroni-2-router/assets/55258483/9beeb7ab-0f8d-4b8a-b5a1-8b3e03c94286
+https://github.com/Epiled/7-days-optimus-tech/assets/55258483/487a997d-b856-4100-a2a7-7ef5605333e2
 
 <h2 id="pre-requisito"> 🚨 Pré-requisito </h2>
 <ul>
