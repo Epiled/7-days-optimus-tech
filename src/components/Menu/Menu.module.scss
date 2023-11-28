@@ -24,9 +24,20 @@
   }
 
   a {
-    color: $gray-500;
+    color: transparent;
+    background: linear-gradient(to right, $gray-500 0 50%, $vermelho 50% 100%);
+    background-position: 0 0;
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    //$gray-500
+    transition: background-position 0.3s ease;
     text-decoration: none;
     backface-visibility: hidden;
+
+    &:hover {
+      background-position: -100% 0;
+    }
   }
 
   &__container {

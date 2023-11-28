@@ -18,6 +18,7 @@ export default function SecaoBase({ destaque, titulo, texto, tipoSecao, imagem, 
   imagemRecebida.src = String(imagem);
 
   const Tag = tag || 'section';
+  const Titulo = tipoSecao === 'principal' ? 'h1' : 'h2';
 
   return (
     <Tag className={classNames(
@@ -29,9 +30,11 @@ export default function SecaoBase({ destaque, titulo, texto, tipoSecao, imagem, 
           styles.secaoBase__intro,
           { [styles[`secaoBase__intro--${tipoSecao}`]]: tipoSecao })
         }>{destaque}</span>}
-      <h1>
+
+      <Titulo className={styles.secaoBase__titulo}>
         {titulo}
-      </h1>
+      </Titulo>
+
       <p>
         {texto}
       </p>
@@ -40,6 +43,7 @@ export default function SecaoBase({ destaque, titulo, texto, tipoSecao, imagem, 
         src={imagem}
         width={imagemRecebida.width}
         height={imagemRecebida.height}
+        alt='#'
       />}
       {children}
     </Tag>

@@ -26,10 +26,10 @@ export default function menu() {
           styles.menu__container,
           styles['menu__container--links']
         )}>
-          <a href="">Home</a>
-          <a href="">Produtos</a>
-          <a href="">Recursos</a>
-          <a href="">Sobre nós</a>
+          <a href="#">Home</a>
+          <a href="#">Produtos</a>
+          <a href="#">Recursos</a>
+          <a href="#">Sobre nós</a>
         </div>
 
         <div className={styles.menu__container}>

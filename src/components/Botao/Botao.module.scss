@@ -10,4 +10,24 @@
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 1.8rem;
+  box-shadow: 0 0 0 0 $vermelh-050;
+
+  &:hover {
+    cursor: pointer;
+    animation: pulse .9s infinite ease-in-out;
+  }
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 $vermelh-050;
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
