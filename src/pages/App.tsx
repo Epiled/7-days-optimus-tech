@@ -24,7 +24,7 @@ function App() {
             destaque={'Vagas abertas!'}
             titulo={'Estamos procurando por talentos'}
             texto={'Somos uma equipe 100% remota com pessoas do Brasil inteiro.'}
-            imagem={'/assets/imgs/procura-talentos.png'}
+            imagem={'./assets/imgs/procura-talentos.png'}
           >
             <Vagas />
           </SecaoBase>
