@@ -32,7 +32,7 @@
 
   }
 
-  &__titulo {
+  h1, h2 {
     color: $gray-900;
     font-size: 3.6rem;
     font-weight: 600;
@@ -57,7 +57,7 @@
       margin-top: 8rem;
     }
 
-    &__titulo {
+    h1, h2 {
       font-size: 4.8rem;
       line-height: 6rem;
 
@@ -77,7 +77,7 @@
       padding: 3.2rem;
     }
 
-    &__titulo {
+    h1, h2 {
       font-weight: 500;
 
       @media screen and (max-width: $tablet) {

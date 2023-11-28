@@ -31,7 +31,7 @@ export default function SecaoBase({ destaque, titulo, texto, tipoSecao, imagem, 
           { [styles[`secaoBase__intro--${tipoSecao}`]]: tipoSecao })
         }>{destaque}</span>}
 
-      <Titulo className={styles.secaoBase__titulo}>
+      <Titulo>
         {titulo}
       </Titulo>
 
