@@ -36,6 +36,7 @@ Implementamos o ESLint para assegurar a consistência e qualidade do código. To
 
 <!--ts-->
    * [Detalhes do projeto](#detalhes-do-projeto)
+   * [Referência](#referencia)
    * [Demonstração](#demonstracao)
      - [Home](#home)
    * [Pré-Requisito](#pre-requisito)
@@ -44,6 +45,10 @@ Implementamos o ESLint para assegurar a consistência e qualidade do código. To
    * [Tecnologias](#tecnologias)
    * [Autor](#autor)
 <!--te-->
+
+<h2 id="referencia"> 📌 Referência </h2>
+
+Figma: <a href="https://www.figma.com/file/AsxsdGTpdD7sooRFofJz3z/7daysOfCode-HTML-CSS-(Copy)?type=design&node-id=0%3A1&mode=design&t=xjvjw35LuZu8Dx9d-1">Link</a>
 
 <h2 id="demonstracao"> 👀 Demonstração </h2>
 
