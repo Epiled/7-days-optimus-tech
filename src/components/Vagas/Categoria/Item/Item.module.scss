@@ -5,8 +5,8 @@
   border-radius: 1.6rem;
   border: .1rem solid $gray-200;
   background: $base-white;
-  padding: 2.4rem;
   font-weight: 500;
+  padding: 2.4rem;
 
 
   &__titulo {
@@ -21,6 +21,7 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 2.4rem;
   }
 }
