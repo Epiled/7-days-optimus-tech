@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/7-days-optimus-tech/static/css/main.860ed93e.css",
-    "main.js": "/7-days-optimus-tech/static/js/main.f32f55d8.js",
+    "main.css": "/7-days-optimus-tech/static/css/main.fff05b17.css",
+    "main.js": "/7-days-optimus-tech/static/js/main.238f4dee.js",
     "static/media/logo.svg": "/7-days-optimus-tech/static/media/logo.9b88fd1879116fa9697f68a0cc7b3167.svg",
     "index.html": "/7-days-optimus-tech/index.html",
-    "main.860ed93e.css.map": "/7-days-optimus-tech/static/css/main.860ed93e.css.map",
-    "main.f32f55d8.js.map": "/7-days-optimus-tech/static/js/main.f32f55d8.js.map"
+    "main.fff05b17.css.map": "/7-days-optimus-tech/static/css/main.fff05b17.css.map",
+    "main.238f4dee.js.map": "/7-days-optimus-tech/static/js/main.238f4dee.js.map"
   },
   "entrypoints": [
-    "static/css/main.860ed93e.css",
-    "static/js/main.f32f55d8.js"
+    "static/css/main.fff05b17.css",
+    "static/js/main.238f4dee.js"
   ]
 }
