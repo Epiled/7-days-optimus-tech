@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Epiled/7-days-optimus-tech/static/css/main.860ed93e.css",
-    "main.js": "/Epiled/7-days-optimus-tech/static/js/main.a4a7c9d9.js",
-    "static/media/logo.svg": "/Epiled/7-days-optimus-tech/static/media/logo.9b88fd1879116fa9697f68a0cc7b3167.svg",
-    "index.html": "/Epiled/7-days-optimus-tech/index.html",
-    "main.860ed93e.css.map": "/Epiled/7-days-optimus-tech/static/css/main.860ed93e.css.map",
-    "main.a4a7c9d9.js.map": "/Epiled/7-days-optimus-tech/static/js/main.a4a7c9d9.js.map"
+    "main.css": "/7-days-optimus-tech/static/css/main.860ed93e.css",
+    "main.js": "/7-days-optimus-tech/static/js/main.f32f55d8.js",
+    "static/media/logo.svg": "/7-days-optimus-tech/static/media/logo.9b88fd1879116fa9697f68a0cc7b3167.svg",
+    "index.html": "/7-days-optimus-tech/index.html",
+    "main.860ed93e.css.map": "/7-days-optimus-tech/static/css/main.860ed93e.css.map",
+    "main.f32f55d8.js.map": "/7-days-optimus-tech/static/js/main.f32f55d8.js.map"
   },
   "entrypoints": [
     "static/css/main.860ed93e.css",
-    "static/js/main.a4a7c9d9.js"
+    "static/js/main.f32f55d8.js"
   ]
 }
