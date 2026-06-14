@@ -1,110 +1,128 @@
-# 7️⃣📄 Days Optimus Tech
+![Social Preview](https://github.com/Epiled/7-days-optimus-tech/assets/55258483/afc823f8-3c22-4d75-8540-abac28d99fcc#vitrinedev)
 
-Participei do desafio de código <a href="https://7daysofcode.io/matricula/html-css">'HTML e CSS: Criando uma página completa de "Vagas"'</a> durante a 7 Days of Code, na categoria de front-end. Este desafio foi conduzido por meio de mentoria com a experiente <a href="https://www.linkedin.com/in/giovannamoeller/">Giovanna Moeller</a>.
+<h1 align="center"> 7️⃣ Days Optimus Tech 📄 </h1>
 
-| :placard: Vitrine.Dev |     |
-| -------------  | --- |
-| :sparkles: Nome        | **Optimus Tech**
-| :label: Tecnologias | react, typescript, sass, css modules, html, css, js, node
+![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)
+![GitHub release](https://img.shields.io/github/v/release/Epiled/7-days-optimus-tech?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/Epiled/7-days-optimus-tech?style=for-the-badge)
 
-<!-- Inserir imagem com a #vitrinedev ao final do link -->
-![optimus-tech](https://github.com/Epiled/7-days-optimus-tech/assets/55258483/afc823f8-3c22-4d75-8540-abac28d99fcc#vitrinedev)
+![GitHub last commit](https://img.shields.io/github/last-commit/Epiled/7-days-optimus-tech?style=for-the-badge)
+![Code Size](https://img.shields.io/github/languages/code-size/Epiled/7-days-optimus-tech?style=for-the-badge)
 
-<h2 id="detalhes-do-projeto"> 📃 Detalhes do projeto </h2>
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=333333)
+![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node\.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-Desenvolvemos um site dedicado à divulgação de oportunidades de emprego conforme a solicitação da empresa Optimus Tech. O projeto foi concluído em um prazo de sete dias, com cada dia destinado ao desenvolvimento de uma seção específica do site.
+## 📑 Table of Contents
 
-Implementamos o ESLint para assegurar a consistência e qualidade do código. Todo o desenvolvimento foi realizado utilizando React com TypeScript, e a estilização foi feita por meio de CSS Modules e Sass.
+- [📑 Table of Contents](#-table-of-contents)
+- [📖 Overview](#-overview)
+- [🛠️ Technologies](#-technologies)
+- [⚡ Performance & PWA](#-performance--pwa)
+- [🚀 Demo](#-demo)
+- [📦 Install and Use](#-install-and-use)
+- [📂 File Structure](#-file-structure)
+- [🎨 Reference & Inspiration](#-reference--inspiration)
+- [👨‍💻 Author and Contact](#%E2%80%8D-author-and-contact)
 
-![Badge](https://img.shields.io/github/last-commit/Epiled/aluroni-2-router?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/code-size/Epiled/aluroni-2-router?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/count/Epiled/aluroni-2-router?style=for-the-badge)
-![Bagde](https://img.shields.io/badge/repo%20status-Beta-cyan?style=for-the-badge)
-![Bagde](https://img.shields.io/github/v/release/Epiled/aluroni-2-router?style=for-the-badge)
-![Bagde](https://img.shields.io/github/license/Epiled/aluroni-2-router?style=for-the-badge)
+## 📖 Overview
 
-![Badge](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Badge](https://img.shields.io/badge/-Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Badge](https://img.shields.io/badge/-Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![Badge](https://img.shields.io/badge/-CSS%20Modules-000000?style=for-the-badge&logo=cssmodules&logoColor=white)
-![Badge](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Badge](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Badge](https://img.shields.io/badge/-JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Badge](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+**7-days-optimus-tech** is a robust frontend web application engineered to deliver a seamless shopping experience for a modern department store. Designed with a strict emphasis on Core Web Vitals and high Lighthouse scores, the platform ensures rapid product discovery and fluid navigation. Built using a modern React and TypeScript stack, the architecture prioritizes scalable global state management, clean component decoupling, and an optimized rendering pipeline to support a diverse, multi-category product catalog.
 
-<h2> 📑 Tabela de Conteúdos </h2>
+## 🛠 Technologies
 
-<!--ts-->
-   * [Detalhes do projeto](#detalhes-do-projeto)
-   * [Referência](#referencia)
-   * [Demonstração](#demonstracao)
-     - [Home](#home)
-   * [Pré-Requisito](#pre-requisito)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-   * [Tecnologias](#tecnologias)
-   * [Autor](#autor)
-<!--te-->
+The following technologies were used to build this project:
 
-<h2 id="referencia"> 📌 Referência </h2>
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en)
+- [Sass](https://sass-lang.com/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
+- [Vite](https://vite.dev/)
 
-Figma: <a href="https://www.figma.com/file/AsxsdGTpdD7sooRFofJz3z/7daysOfCode-HTML-CSS-(Copy)?type=design&node-id=0%3A1&mode=design&t=xjvjw35LuZu8Dx9d-1">Link</a>
+## ⚡ Performance & PWA
 
-<h2 id="demonstracao"> 👀 Demonstração </h2>
+<!-- ![Lighthouse Performance](./design/github/lighthouse-report/lighthouse-report.png) -->
 
-<h3 id="home"> Home </h3>
+Comming Soon!
+
+## 🚀 Demo
+
+Access the live application below to interact with the interface and run your own performance tests
+
+7-days-optimus-tech: [https://7-days-optimus-tech-eight.vercel.app/](https://7-days-optimus-tech-eight.vercel.app/)
+
+### Desktop
 
 https://github.com/Epiled/7-days-optimus-tech/assets/55258483/14c8fe0c-0247-4755-98cd-3106d9c12100
 
+### Mobile
+
 https://github.com/Epiled/7-days-optimus-tech/assets/55258483/487a997d-b856-4100-a2a7-7ef5605333e2
 
-<h2 id="pre-requisito"> 🚨 Pré-requisito </h2>
-<ul>
-  <li>Node</li>
-</ul>
+## 📦 Install and Use
 
-<h2 id="instalacao"> ⚙ Instalação </h2>
+**Prerequisites:** Node.js (v22.x) or higher installed.
 
-```
-1. git clone https://github.com/Epiled/7-days-optimus-tech.git
-2. cd 7-days-optimus-tech
-3. npm install
+1. Clone the repository:
+```bash
+git clone https://github.com/Epiled/7-days-optimus-tech.git
+cd 7-days-optimus-tech
 ```
 
-<h2 id="como-usar"> 👩‍🏫 Como usar </h2>
-
+2. Install the dependencies:
+```bash
+npm install
 ```
-1. npm start
+
+3. Run the development environment (Build + Watch + Server):
+```bash
+npm run start
 ```
 
-Caso a url não abra sozinha acesse a url [http://localhost:3000](http://localhost:3000)
+4. (Optional) Generate minified build for production:
+```bash
+npm run build
+```
 
-<h2 id="tecnologias"> 🛠 Tecnologias </h2>
+## 📂 File Structure
 
-As seguintes tecnologias foram usadas na construção deste projeto:
+Below is the project architecture. All development is done inside the `src/` folder. The `dist/` folder is automatically generated by Vite and should not be edited manually.
 
-<ul>
-  <li><a href="https://react.dev/" target="_blank">React</a></li>
-  <li><a href="https://www.typescriptlang.org/" target="_blank">Typescript</a></li>
-  <li><a href="https://sass-lang.com/" target="_blank">Sass</a></li>
-  <li><a href="https://www.npmjs.com/package/typescript-plugin-css-modules" target="_blank">CSS Modules</a></li>
-  <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML5</a></li>
-  <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS3</a></li>
-  <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
-  <li><a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
-</ul>
+```text
+7-days-optimus-tech/
+├── src/                # Main source code
+│   ├── assets/         # Images and SVGs processed by the build pipeline
+│   ├── components/     # Reusable UI components (Atomic Design principles)
+│   ├── data/           # Static content and application data sources
+│   ├── interfaces/     # Global TypeScript definitions and data shape contracts
+│   ├── pages/          # Top-level view components representing application routes
+│   ├── styles/         # Global styles and theme definitions
+│   ├── types/          # Shared TypeScript type aliases and utility types
+│   ├── index.css       # Global application styles and CSS resets
+│   └── index.tsx       # Application entry point
+├── public/             # Static assets (favicons, robots.txt)
+├── vite.config.ts      # Custom Vite configuration (plugins and aliases)
+├── tsconfig.json       # TypeScript strict configuration
+└── package.json        # Project dependencies and automation scripts
+```
 
-<h2 id="autor"> 👨‍💻 Autor </h2>
+## 🎨 Reference & Inspiration
+
+The project's design and wireframes are available for viewing on Figma.
+
+Figma / Wireframe: [7-days-optimus-tech](https://www.figma.com/file/AsxsdGTpdD7sooRFofJz3z/7daysOfCode-HTML-CSS-(Copy)?type=design&node-id=0%3A1&mode=design&t=xjvjw35LuZu8Dx9d-1)
+
+## 👨‍💻 Author and Contact
 
 <a href="https://github.com/Epiled">
+  <img src="https://user-images.githubusercontent.com/55258483/178338085-2cea8bf2-6d0c-409a-9d0e-23359b7d303e.png" alt="Felindo">
+  <br />
+  <sub><b>Felipe De Andrade</b></sub>
+</a>
 
-![Felindo](https://user-images.githubusercontent.com/55258483/178338085-2cea8bf2-6d0c-409a-9d0e-23359b7d303e.png)
- <br />
- <sub><b>Felipe De Andrade</b></sub></a>
+Made with ❤️ by Felipe De Andrade 👋🏽 Get in touch!
 
-Feito com ❤️ por Felipe De Andrade 👋🏽 Entre em contato!
-
-[![Linkedin Badge](https://img.shields.io/badge/-Felipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fademendonca/)](https://www.linkedin.com/in/fademendonca/)
-[![Gmail Badge](https://img.shields.io/badge/-felipe.deam98@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:felipe.deam98@gmail.com)](mailto:felipe.deam98@gmail.com)
-[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/felipe.deam/)](https://www.instagram.com/felipe.deam/)
-[![Codepen Badge](https://img.shields.io/badge/-Codepen-000000?style=flat-square&logo=Codepen&logoColor=white&link=https://codepen.io/epiled)](https://codepen.io/epiled)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fademendonca/)
+[![CodePen](https://img.shields.io/badge/CodePen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/epiled)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:felipe.deam98@gmail.com)
