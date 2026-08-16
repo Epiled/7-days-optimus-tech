@@ -50,7 +50,7 @@ Comming Soon!
 
 Access the live application below to interact with the interface and run your own performance tests
 
-7-days-optimus-tech: [https://7-days-optimus-tech-eight.vercel.app/](https://7-days-optimus-tech-eight.vercel.app/)
+7-days-optimus-tech: [https://epiled.github.io/7-days-optimus-tech/](https://epiled.github.io/7-days-optimus-tech/)
 
 ### Desktop
 
