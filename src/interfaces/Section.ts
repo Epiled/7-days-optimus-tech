@@ -1,8 +1,8 @@
 /* eslint-disable semi */
-export default interface ISecaoBase {
-  destaque?: string,
-  titulo: string,
-  texto: string,
-  principal?: boolean
-  imagem?: string
+export default interface Section {
+  highlight?: string;
+  title: string;
+  text: string;
+  main?: boolean;
+  image?: string;
 }

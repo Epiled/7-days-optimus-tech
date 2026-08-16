@@ -1,12 +1,12 @@
-import Categoria from './Categoria';
-import styles from './Vagas.module.scss';
-import vagas from 'data/vagas.json';
+import styles from './Jobs.module.scss';
+import Category from './Category';
+import jobs from 'data/jobs.json';
 
-export default function Vagas() {
+export default function Jobs() {
   return (
-    <div className={styles.vagas}>
-      {vagas.map((item, index) => (
-        <Categoria key={index} categoria={item.categoria} vagas={item.vagas} />
+    <div className={styles.jobs}>
+      {jobs.map((item, index) => (
+        <Category key={index} category={item.category} jobs={item.jobs} />
       ))}
     </div>
   );

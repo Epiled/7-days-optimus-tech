@@ -1,14 +1,18 @@
-import styles from './Formulario.module.scss';
-import Botao from 'components/Botao';
+import styles from './Form.module.scss';
+import Button from 'components/Button';
 
-export default function Formulario() {
+export default function Form() {
   return (
-    <div className={styles.formulario}>
-      <form className={styles.formulario__campos}>
-        <input className={styles.formulario__campo} type='email' placeholder='Seu e-mail' />
-        <Botao>Cadastrar</Botao>
+    <div className={styles.form}>
+      <form className={styles.form__fields}>
+        <input
+          className={styles.form__field}
+          type="email"
+          placeholder="Seu e-mail"
+        />
+        <Button>Cadastrar</Button>
       </form>
-      <span className={styles.formulario__copy}>
+      <span className={styles.form__copyright}>
         © 2022 OptimusTech. Todos os direitos reservados.
       </span>
     </div>

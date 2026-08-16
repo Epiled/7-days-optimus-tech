@@ -1,5 +1,5 @@
-import itens from 'data/metricas.json';
+import items from 'data/metrics.json';
 
-export type Itens = typeof itens;
+export type Metrics = typeof items;
 
-export type Item = typeof itens[0];
+export type Metric = (typeof items)[0];

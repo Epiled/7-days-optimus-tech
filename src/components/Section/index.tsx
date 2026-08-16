@@ -1,50 +1,57 @@
 import React from 'react';
-import styles from './SecaoBase.module.scss';
+import styles from './Section.module.scss';
 import classNames from 'classnames';
 
-interface Props {
-  destaque?: string,
-  titulo: string,
-  texto?: string,
-  tipoSecao?: string,
-  imagem?: string,
-  children?: React.ReactNode,
-  tag?: keyof JSX.IntrinsicElements
+interface SectionProps {
+  highlight?: string;
+  title: string;
+  text?: string;
+  type?: string;
+  image?: string | null;
+  children?: React.ReactNode;
+  tag?: keyof JSX.IntrinsicElements;
 }
 
-export default function SecaoBase({ destaque, titulo, texto, tipoSecao, imagem, children, tag }: Props) {
-
-  const imagemRecebida = new Image;
-  imagemRecebida.src = String(imagem);
-
+export default function Section({
+  highlight,
+  title,
+  text,
+  type,
+  image = null,
+  children,
+  tag,
+}: SectionProps) {
   const Tag = tag || 'section';
-  const Titulo = tipoSecao === 'principal' ? 'h1' : 'h2';
+  const Title = type === 'main' ? 'h1' : 'h2';
 
   return (
-    <Tag className={classNames(
-      styles.secaoBase,
-      { [styles[`secaoBase--${tipoSecao}`]]: tipoSecao })
-    }>
-      {destaque && <span
-        className={classNames(
-          styles.secaoBase__intro,
-          { [styles[`secaoBase__intro--${tipoSecao}`]]: tipoSecao })
-        }>{destaque}</span>}
+    <Tag
+      className={classNames(styles.section, {
+        [styles[`section--${type}`]]: type,
+      })}
+    >
+      {highlight && (
+        <span
+          className={classNames(styles.section__intro, {
+            [styles[`section__intro--${type}`]]: type,
+          })}
+        >
+          {highlight}
+        </span>
+      )}
 
-      <Titulo>
-        {titulo}
-      </Titulo>
+      <Title>{title}</Title>
 
-      <p>
-        {texto}
-      </p>
-      {imagem && <img
-        className={styles.secaoBase__imagem}
-        src={imagem}
-        width={imagemRecebida.width}
-        height={imagemRecebida.height}
-        alt='#'
-      />}
+      <p>{text}</p>
+      {image && (
+        <img
+          className={styles.section__image}
+          src={image}
+          width={'1216'}
+          height={'400'}
+          alt="#"
+        />
+      )}
       {children}
     </Tag>
   );

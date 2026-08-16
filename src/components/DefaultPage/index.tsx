@@ -1,9 +1,9 @@
-import stylesThema from 'styles/Tema.module.scss';
+import stylesTheme from 'styles/Theme.module.scss';
 
-export default function PaginaPadrao({ children }: { children?: React.ReactNode }) {
-  return (
-    <main className={stylesThema.container}>
-      {children}
-    </main>
-  );
+export default function DefaultPage({
+  children,
+}: {
+  children?: React.ReactNode;
+}) {
+  return <main className={stylesTheme.container}>{children}</main>;
 }

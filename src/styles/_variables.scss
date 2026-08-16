@@ -1,14 +1,24 @@
-$base-white: rgba(255, 255, 255, 1);
-$gray: rgba(58, 64, 78, 1);
-$gray-200: rgba(234, 236, 240, 1);
-$gray-400: rgba(152, 162, 179, 1);
-$gray-50: rgba(249, 250, 251, 1);
-$gray-500: rgba(102, 112, 133, 1);
-$gray-900: rgba(16, 24, 40, 1);
-$gray-900-005: rgba(16, 24, 40, .5);
-$vermelho: rgba(142, 36, 36, 1);
-$vermelh-050: rgba(142, 36, 36, .5);
-$vermelho-005: rgba(142, 36, 36, 0.05);
-$vermelho-003: rgba(195, 25, 25, 0.03);
-$white-alt: rgba(208, 213, 221, 1);
-$acessibility-gray: $gray-500;
+/* Danger / Feedback Actions */
+$color-primary: #8e2424;
+$color-primary-50: #8e242480;
+$color-primary-5: #8e24240d;
+$color-primary-light-3: #c3191908;
+
+/* Text & Typography */
+$color-text-primary: #101828;
+$color-text-secondary: #3a404e;
+$color-text-accessibility: #667085;
+$color-text-placeholder: #98a2b3;
+
+/* Surfaces & Backgrounds */
+$color-surface-base: #ffffff;
+$color-surface-muted: #f9fafb;
+$color-surface-alt: #eaecf0;
+$color-surface-disabled: #d0d5dd;
+
+/* Overlays */
+$color-overlay-50: #10182880;
+
+/* Neutrals (Raw values) */
+$color-neutral-white: #ffffff;
+$color-neutral-black-0: #ffffff00;

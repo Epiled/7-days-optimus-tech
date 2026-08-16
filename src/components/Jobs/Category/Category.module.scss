@@ -1,17 +1,16 @@
-@import "styles/variaveis";
+@import "styles/variables";
 @import "styles/breakpoints";
 
-.categoria {
-
-  &__titulo {
-    color: $gray-900;
+.category {
+  &__title {
+    color: $color-text-primary;
     font-size: 2rem;
     font-weight: 500;
     line-height: 3rem;
     margin-bottom: 3.2rem;
   }
 
-  &__vagas {
+  &__jobs {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;

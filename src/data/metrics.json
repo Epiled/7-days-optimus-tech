@@ -1,23 +1,23 @@
 [
   {
-    "numero": 400,
-    "titulo": "Projetos concluídos",
-    "texto": "Nós ajudamos a construir mais de 400 projetos incríveis.",
-    "milhar": false
+    "number": 400,
+    "title": "Projetos concluídos",
+    "text": "Nós ajudamos a construir mais de 400 projetos incríveis.",
+    "thousand": false
   }, {
-    "numero": 100,
-    "titulo": "Colaboradores",
-    "texto": "Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.",
-    "milhar": false
+    "number": 100,
+    "title": "Colaboradores",
+    "text": "Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.",
+    "thousand": false
   }, {
-    "numero": 20,
-    "titulo": "Downloads",
-    "texto": "Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.",
-    "milhar": true
+    "number": 20,
+    "title": "Downloads",
+    "text": "Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.",
+    "thousand": true
   }, {
-    "numero": 500,
-    "titulo": "Reviews 5 estrelas",
-    "texto": "Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.",
-    "milhar": false
+    "number": 500,
+    "title": "Reviews 5 estrelas",
+    "text": "Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.",
+    "thousand": false
   }
 ]

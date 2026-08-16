@@ -1,14 +1,14 @@
-@import "styles/variaveis";
+@import "styles/variables";
 @import "styles/breakpoints";
 
-.botaoHamburguer {
+.toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 3rem;
   height: 2rem;
   cursor: pointer;
-  
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -18,13 +18,13 @@
 .bar2,
 .bar3 {
   width: 2.5rem;
-  height: .3rem;
-  background-color: $vermelho;
+  height: 0.3rem;
+  background-color: $color-primary;
   transition: 0.4s;
 }
 
 .open .bar1 {
-  transform: rotate(-45deg) translate(-.5rem, .6rem);
+  transform: rotate(-45deg) translate(-0.5rem, 0.6rem);
 }
 
 .open .bar2 {
@@ -32,5 +32,5 @@
 }
 
 .open .bar3 {
-  transform: rotate(45deg) translate(-.5rem, -.6rem);
+  transform: rotate(45deg) translate(-0.5rem, -0.6rem);
 }

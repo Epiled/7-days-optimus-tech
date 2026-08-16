@@ -1,26 +1,18 @@
-import styles from './Depoimentos.module.scss';
-import imagemPerfil from 'assets/img/depoimentos/julia-castro.png';
+import styles from './Testimonials.module.scss';
+import profileImage from 'assets/img/depoimentos/julia-castro.png';
 
-export default function Depoimentos() {
-
-  const imagemRecebida = new Image;
-  imagemRecebida.src = String(imagemPerfil);
-
+export default function Testimonials() {
   return (
-    <div className={styles.depoimentos}>
+    <div className={styles.testimonials}>
       <img
-        className={styles.depoimentos__imagem}
-        src={imagemPerfil}
+        className={styles.testimonials__image}
+        src={profileImage}
         alt="Júlia Castro"
-        width={imagemRecebida.width}
-        height={imagemRecebida.height}
+        width={'56'}
+        height={'56'}
       />
-      <h3 className={styles.depoimentos__titulo}>
-        Júlia Castro
-      </h3>
-      <span className={styles.depoimentos__cargo}>
-        Desenvolvedora Web
-      </span>
+      <h3 className={styles.testimonials__title}>Júlia Castro</h3>
+      <span className={styles.testimonials__position}>Desenvolvedora Web</span>
     </div>
   );
 }

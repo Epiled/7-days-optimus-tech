@@ -1,36 +1,36 @@
 [
   {
-    "categoria": "Design",
-    "vagas": [
+    "category": "Design",
+    "jobs": [
       {
-        "titulo": "Product Designer",
-        "modelo": "Full-time",
-        "salario": "7.000"
+        "title": "Product Designer",
+        "journey": "Full-time",
+        "salary": "7.000"
       },
       {
-        "titulo": "UX Designer",
-        "modelo": "Full-time",
-        "salario": "6.000"
+        "title": "UX Designer",
+        "journey": "Full-time",
+        "salary": "6.000"
       }
     ]
   },
   {
-    "categoria": "Desenvolvimento de Software",
-    "vagas": [
+    "category": "Desenvolvimento de Software",
+    "jobs": [
       {
-        "titulo": "Desenvolvedor(a) iOS",
-        "modelo": "Full-time",
-        "salario": "8.000"
+        "title": "Desenvolvedor(a) iOS",
+        "journey": "Full-time",
+        "salary": "8.000"
       },
       {
-        "titulo": "Desenvolvedor(a) Front-end",
-        "modelo": "Full-time",
-        "salario": "7.000"
+        "title": "Desenvolvedor(a) Front-end",
+        "journey": "Full-time",
+        "salary": "7.000"
       },
       {
-        "titulo": "Desenvolvedor(a) Back-end",
-        "modelo": "Full-time",
-        "salario": "8.000"
+        "title": "Desenvolvedor(a) Back-end",
+        "journey": "Full-time",
+        "salary": "8.000"
       }
     ]
   }

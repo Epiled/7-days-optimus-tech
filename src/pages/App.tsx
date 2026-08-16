@@ -1,50 +1,54 @@
-import PaginaPadrao from 'components/PaginaPadrao';
+import DefaultPage from 'components/DefaultPage';
 import Wrap from 'components/Wrap';
 import Menu from 'components/Menu';
-import SecaoBase from 'components/SecaoBase';
-import Metricas from 'components/Metricas';
-import Vagas from 'components/Vagas';
-import Depoimentos from 'components/Depoimentos';
-import Formulario from 'components/Formulario';
+import Section from 'components/Section';
+import Information from 'components/Information';
+import Jobs from 'components/Jobs';
+import Testimonials from 'components/Testimonials';
+import Form from 'components/Form';
 
 function App() {
   return (
     <div className="App">
-      <PaginaPadrao>
+      <DefaultPage>
         <Wrap>
           <Menu />
-          <SecaoBase
-            destaque={'Sobre nós'}
-            titulo={'Por que somos diferentes?'}
-            texto={'Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.'}
-            tipoSecao={'principal'}
+          <Section
+            highlight={'Sobre nós'}
+            title={'Por que somos diferentes?'}
+            text={
+              'Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.'
+            }
+            type={'main'}
           />
-          <Metricas />
-          <SecaoBase
-            destaque={'Vagas abertas!'}
-            titulo={'Estamos procurando por talentos'}
-            texto={'Somos uma equipe 100% remota com pessoas do Brasil inteiro.'}
-            imagem={'./assets/imgs/procura-talentos.png'}
+          <Information />
+          <Section
+            highlight={'Jobs abertas!'}
+            title={'Estamos procurando por talentos'}
+            text={'Somos uma equipe 100% remota com pessoas do Brasil inteiro.'}
+            image={'./assets/img/procura-talentos.png'}
           >
-            <Vagas />
-          </SecaoBase>
-          <SecaoBase
-            destaque={'Veja o que nossos colaboradores falam sobre nós'}
-            titulo={'OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.'}
-            tipoSecao={'depoimentos'}
+            <Jobs />
+          </Section>
+          <Section
+            highlight={'Veja o que nossos colaboradores falam sobre nós'}
+            title={
+              'OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.'
+            }
+            type={'Testimonials'}
           >
-            <Depoimentos />
-          </SecaoBase>
+            <Testimonials />
+          </Section>
         </Wrap>
-        <SecaoBase
-          titulo={'Acompanhe as nossas oportunidades'}
-          texto={'Seja o primeiro a saber quando novas vagas serão abertas!'}
-          tipoSecao={'formulario'}
+        <Section
+          title={'Acompanhe as nossas oportunidades'}
+          text={'Seja o primeiro a saber quando novas Jobs serão abertas!'}
+          type={'form'}
           tag={'aside'}
         >
-          <Formulario />
-        </SecaoBase>
-      </PaginaPadrao>
+          <Form />
+        </Section>
+      </DefaultPage>
     </div>
   );
 }

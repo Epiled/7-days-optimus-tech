@@ -1,24 +1,24 @@
-@import "styles/variaveis";
+@import "styles/variables";
 @import "styles/breakpoints";
 
-.depoimentos {
+.testimonials {
   text-align: center;
 
-  &__imagem {
+  &__image {
     border-radius: 20rem;
     margin-top: 3.2rem;
   }
 
-  &__titulo {
-    color: $gray-900;
+  &__title {
+    color: $color-text-primary;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.4rem;
-    margin: 1.6rem 0 .4rem 0;
+    margin: 1.6rem 0 0.4rem 0;
   }
 
-  &__cargo {
-    color: $gray-500;
+  &__position {
+    color: $color-text-accessibility;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2rem;
