@@ -1,7 +1,8 @@
-import { useState, useEffect, FC } from 'react';
-import { useInView } from 'react-intersection-observer';
-import styles from './Item.module.scss';
-import { Metric } from 'types/Metric';
+// typescript-eslint/no-unused-vars
+import { useState, useEffect, FC } from "react";
+import { useInView } from "react-intersection-observer";
+import styles from "./Item.module.scss";
+import { Metric } from "types/Metric";
 
 const Infos: FC<Metric> = (props) => {
   const [count, setCount] = useState<number>(0);
@@ -36,7 +37,7 @@ const Infos: FC<Metric> = (props) => {
     <div ref={ref} className={styles.item}>
       <span
         className={styles.item__count}
-      >{`${count}${props.thousand ? 'k' : '+'}`}</span>
+      >{`${count}${props.thousand ? "k" : "+"}`}</span>
       <h2 className={styles.item__title}>{props.title}</h2>
       <p className={styles.item__text}>{props.text}</p>
     </div>
