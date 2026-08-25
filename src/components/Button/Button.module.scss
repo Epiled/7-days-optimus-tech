@@ -1,0 +1,33 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+.button {
+  border-radius: 0.8rem;
+  border: 0.1rem solid $color-primary;
+  background: $color-primary;
+  box-shadow: 0 0.1rem 0.2rem 0 $color-overlay-50;
+  color: $color-surface-base;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 1.8rem;
+  box-shadow: 0 0 0 0 $color-primary-50;
+
+  &:hover {
+    cursor: pointer;
+    animation: pulse 0.9s infinite ease-in-out;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $color-primary-50;
+  }
+
+  70% {
+    box-shadow: 0 0 0 1rem $color-neutral-black-0;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 $color-neutral-black-0;
+  }
+}

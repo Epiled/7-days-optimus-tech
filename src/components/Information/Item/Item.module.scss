@@ -1,0 +1,26 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+.item {
+  &__count {
+    color: $color-primary;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 7.2rem;
+  }
+
+  &__title {
+    color: $color-text-primary;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    margin: 1.2rem 0 0.8rem 0;
+  }
+
+  &__text {
+    color: $color-text-accessibility;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+}

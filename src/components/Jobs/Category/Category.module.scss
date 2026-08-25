@@ -1,0 +1,18 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+.category {
+  &__title {
+    color: $color-text-primary;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}

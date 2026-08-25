@@ -1,0 +1,26 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+.item {
+  border-radius: 1.6rem;
+  border: 0.1rem solid $color-surface-alt;
+  background: $color-surface-base;
+  font-weight: 500;
+  padding: 2.4rem;
+
+  &__title {
+    color: $color-text-primary;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__information {
+    color: $color-text-accessibility;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+}
