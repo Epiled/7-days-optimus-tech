@@ -1,6 +1,6 @@
-import styles from './Jobs.module.scss';
-import Category from './Category';
-import jobs from 'data/jobs.json';
+import styles from "./Jobs.module.scss";
+import Category from "./Category";
+import jobs from "@/data/jobs.json";
 
 export default function Jobs() {
   return (

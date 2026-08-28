@@ -1,4 +1,4 @@
-import styles from './Wrap.module.scss';
+import styles from "./Wrap.module.scss";
 
 interface WrapProps {
   children: React.ReactNode;
