@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import classNames from 'classnames';
-import styles from './Menu.module.scss';
-import Button from 'components/Button';
-import Toggle from './Toggle';
-import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
+import { useState } from "react";
+import classNames from "classnames";
+import styles from "./Menu.module.scss";
+import Button from "@/components/Button";
+import Toggle from "./Toggle";
+import Logo from "@/assets/svg/logo.svg?react";
 
-export default function menu() {
+export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -13,10 +13,10 @@ export default function menu() {
       <div
         className={classNames(
           styles.menu__container,
-          styles['menu__container--logo'],
+          styles["menu__container--logo"],
         )}
       >
-        <Logo fontSize={25} />
+        <Logo width={25} height={25} />
         <span className={styles.menu__brand}>OptimusTech</span>
       </div>
 
@@ -24,13 +24,13 @@ export default function menu() {
 
       <div
         className={classNames(styles.menu__bar, {
-          [styles['menu__bar--active']]: isOpen,
+          [styles["menu__bar--active"]]: isOpen,
         })}
       >
         <div
           className={classNames(
             styles.menu__container,
-            styles['menu__container--links'],
+            styles["menu__container--links"],
           )}
         >
           <a className={styles.menu__link} href="#">

@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './Section.module.scss';
-import classNames from 'classnames';
+import React, { type JSX } from "react";
+import styles from "./Section.module.scss";
+import classNames from "classnames";
 
 interface SectionProps {
   highlight?: string;
@@ -21,8 +21,8 @@ export default function Section({
   children,
   tag,
 }: SectionProps) {
-  const Tag = tag || 'section';
-  const Title = type === 'main' ? 'h1' : 'h2';
+  const Tag = tag || "section";
+  const Title = type === "main" ? "h1" : "h2";
 
   return (
     <Tag
@@ -47,8 +47,8 @@ export default function Section({
         <img
           className={styles.section__image}
           src={image}
-          width={'1216'}
-          height={'400'}
+          width={"1216"}
+          height={"400"}
           alt="#"
         />
       )}

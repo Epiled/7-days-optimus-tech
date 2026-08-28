@@ -1,5 +1,5 @@
-import JobProps from 'interfaces/Job';
-import styles from './Item.module.scss';
+import type JobProps from "@/interfaces/Job";
+import styles from "./Item.module.scss";
 
 export default function Item({ title, journey, salary }: JobProps) {
   return (

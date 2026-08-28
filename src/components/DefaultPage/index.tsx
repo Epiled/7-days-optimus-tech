@@ -1,4 +1,4 @@
-import stylesTheme from 'styles/Theme.module.scss';
+import stylesTheme from "@/styles/Theme.module.scss";
 
 export default function DefaultPage({
   children,
