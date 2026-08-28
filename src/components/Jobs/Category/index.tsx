@@ -1,6 +1,6 @@
-import styles from './Category.module.scss';
-import Item from './Item';
-import JobProps from 'interfaces/Job';
+import styles from "./Category.module.scss";
+import Item from "./Item";
+import type JobProps from "@/interfaces/Job";
 
 interface CategoryProps {
   category: string;

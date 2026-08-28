@@ -1,4 +1,4 @@
-import styles from './Button.module.scss';
+import styles from "./Button.module.scss";
 
 interface ButtonProps {
   children?: string;
@@ -6,6 +6,6 @@ interface ButtonProps {
 
 export default function Button({ children }: ButtonProps) {
   return (
-    <button className={styles.button}>{children ? children : 'Botão'}</button>
+    <button className={styles.button}>{children ? children : "Botão"}</button>
   );
 }

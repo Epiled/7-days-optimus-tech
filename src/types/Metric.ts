@@ -1,4 +1,4 @@
-import items from 'data/metrics.json';
+import items from "data/metrics.json";
 
 export type Metrics = typeof items;
 

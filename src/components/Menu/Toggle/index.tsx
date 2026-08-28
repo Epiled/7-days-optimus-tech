@@ -1,5 +1,5 @@
-import classNames from 'classnames';
-import styles from './Toggle.module.scss';
+import classNames from "classnames";
+import styles from "./Toggle.module.scss";
 
 interface ToggleProps {
   isOpen: boolean;

@@ -1,8 +1,8 @@
 // typescript-eslint/no-unused-vars
-import { useState, useEffect, FC } from "react";
+import { useState, useEffect, type FC } from "react";
 import { useInView } from "react-intersection-observer";
 import styles from "./Item.module.scss";
-import { Metric } from "types/Metric";
+import type { Metric } from "@/types/Metric";
 
 const Infos: FC<Metric> = (props) => {
   const [count, setCount] = useState<number>(0);
