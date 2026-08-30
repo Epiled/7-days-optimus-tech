@@ -44,7 +44,7 @@ The following technologies were used to build this project:
 
 <!-- ![Lighthouse Performance](./design/github/lighthouse-report/lighthouse-report.png) -->
 
-Comming Soon!
+Coming Soon!
 
 ## 🚀 Demo
 
