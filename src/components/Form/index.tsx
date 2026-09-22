@@ -2,6 +2,8 @@ import styles from "./Form.module.scss";
 import Button from "@/components/Button";
 
 export default function Form() {
+  const year = new Date().getFullYear();
+
   return (
     <div className={styles.form}>
       <form aria-label="newsletter" className={styles.form__fields}>
@@ -16,7 +18,7 @@ export default function Form() {
         <Button>Cadastrar</Button>
       </form>
       <span className={styles.form__copyright}>
-        © 2022 OptimusTech. Todos os direitos reservados.
+        © {year} OptimusTech. Todos os direitos reservados.
       </span>
     </div>
   );
