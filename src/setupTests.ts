@@ -1,3 +1,4 @@
+import "@testing-library/jest-dom/vitest";
 class IntersectionObserverMock {
   root = null;
   rootMargin = "";
