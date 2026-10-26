@@ -22,7 +22,7 @@ export const Home = () => {
         />
         <Information />
         <Section
-          highlight={"Jobs abertas!"}
+          highlight={"Vagas abertas!"}
           title={"Estamos procurando por talentos"}
           text={"Somos uma equipe 100% remota com pessoas do Brasil inteiro."}
           image={"/assets/img/procura-talentos.png"}
