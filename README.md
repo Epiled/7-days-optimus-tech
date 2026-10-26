@@ -77,7 +77,7 @@ npm install
 
 3. Run the development environment (Build + Watch + Server):
 ```bash
-npm run start
+npm run dev
 ```
 
 4. (Optional) Generate minified build for production:

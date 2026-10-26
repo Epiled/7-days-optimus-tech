@@ -1,5 +1,5 @@
-@import "@/styles/variables";
-@import "@/styles/breakpoints";
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
 
 .section {
   display: flex;
@@ -14,7 +14,7 @@
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
-    background: $color-primary-50;
+    background: $color-primary-5;
     border-radius: 1.6rem;
     padding: 0.4rem 1.2rem;
 
