@@ -1,0 +1,47 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    height: 0.1rem;
+    width: 0.1rem;
+  }
+
+  &__box {
+    position: relative;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $color-neutral-white;
+    border: 0.1rem solid $color-neutral-gray-medium;
+
+    &[data-state="active"] {
+      border: 0.1rem solid $color-primary;
+      background: $color-primary;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+  }
+
+  &__label {
+    color: $color-text-primary;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+}
