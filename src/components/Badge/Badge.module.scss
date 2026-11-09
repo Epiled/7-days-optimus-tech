@@ -1,0 +1,38 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+.badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 1.6rem;
+
+  &[data-type="brand"] {
+    color: $color-brand;
+    background: $color-brand-05;
+  }
+
+  &[data-type="success"] {
+    color: $color-status-success-foreground;
+    background: $color-status-success-background;
+  }
+
+  &[data-type="info"] {
+    color: $color-status-info-foreground;
+    background: $color-status-info-background;
+  }
+
+  &[data-type="warning"] {
+    color: $color-status-warning-foreground;
+    background: $color-status-warning-background;
+  }
+
+  &[data-type="neutral"] {
+    color: $color-status-neutral-foreground;
+    background: $color-status-neutral-background;
+  }
+}
