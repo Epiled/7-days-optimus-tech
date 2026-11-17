@@ -1,14 +1,6 @@
 import styles from "./Imagicon.module.scss";
-
-import Icon, { type IconConfig } from "../Icon/Icon";
-import type { BadgeType } from "../Badge";
-
-interface ImagiconProps {
-  shape: "circle" | "square";
-  type: BadgeType;
-  icon?: IconConfig;
-  letters?: string;
-}
+import Icon from "../Icon/Icon";
+import type { ImagiconProps } from "./Imagicon.types";
 
 export default function Imagicon({
   shape,
