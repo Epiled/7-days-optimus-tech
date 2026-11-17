@@ -1,8 +1,5 @@
 import styles from "./Tag.module.scss";
-
-interface TagProps {
-  text: string;
-}
+import type { TagProps } from "./Tag.types";
 
 export default function Tag({ text }: TagProps) {
   return <span className={styles.tag}>{text}</span>;
