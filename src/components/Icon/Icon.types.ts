@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type IconSize = 12 | 16 | 24 | 32;
+export type IconSize = 12 | 16 | 20 | 24 | 32;
 
 export type IconColor =
   | "inherit"
@@ -13,7 +13,7 @@ export type IconColor =
   | "warning"
   | "neutral";
 
-export interface IconOptions {
+export interface IconProps {
   size?: IconSize;
   color?: IconColor;
   label?: string;
@@ -21,6 +21,6 @@ export interface IconOptions {
   strokeWidth?: number;
 }
 
-export interface IconBaseProps extends IconOptions {
+export interface IconBaseProps extends IconProps {
   children: ReactNode;
 }
