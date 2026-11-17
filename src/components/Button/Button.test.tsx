@@ -4,7 +4,7 @@ import Button from ".";
 
 describe("Button", () => {
   it("should render the button", () => {
-    render(<Button />);
+    render(<Button variant={"primary"} />);
 
     const button = screen.getByRole("button");
 
@@ -12,7 +12,7 @@ describe("Button", () => {
   });
 
   it("should render the button with default text", () => {
-    render(<Button />);
+    render(<Button variant={"primary"} />);
 
     const button = screen.getByRole("button");
 
@@ -20,10 +20,21 @@ describe("Button", () => {
   });
 
   it("should render the button with custom text", () => {
-    render(<Button children="Custom Text" />);
+    render(<Button children="Custom Text" variant={"primary"} />);
 
     const button = screen.getByRole("button");
 
     expect(button).toHaveTextContent("Custom Text");
   });
+
+  it.each(["primary", "secondary", "outline", "outline-primary"] as const)(
+    "should render the Button with %s type",
+    (type) => {
+      render(<Button variant={type} />);
+
+      const button = screen.getByRole("button");
+
+      expect(button).toHaveAttribute("data-variant", type);
+    },
+  );
 });

@@ -2,19 +2,70 @@
 @use "@/styles/breakpoints" as *;
 
 .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   border-radius: 0.8rem;
-  border: 0.1rem solid $color-primary;
+  border: 0;
   background: $color-primary;
-  box-shadow: 0 0.1rem 0.2rem 0 $color-overlay-50;
   color: $color-surface-base;
   font-size: 1.6rem;
   font-weight: 500;
-  padding: 1rem 1.8rem;
-  box-shadow: 0 0 0 0 $color-primary-50;
+  line-height: 2.4rem;
+  padding: 1rem 1.2rem;
 
   &:hover {
     cursor: pointer;
     animation: pulse 0.9s infinite ease-in-out;
+  }
+
+  &[data-variant="primary"] {
+    background: $color-brand;
+    border-width: 0;
+    color: $color-neutral-white;
+  }
+
+  &[data-variant="secondary"] {
+    background: transparent;
+    border: 0 solid transparent;
+    color: $color-text-secondary;
+  }
+
+  &[data-variant="outline"] {
+    background: transparent;
+    border: 0.1rem solid $color-neutral-gray;
+    color: $color-text-primary;
+  }
+
+  &[data-variant="outline-primary"] {
+    background: transparent;
+    border: 0.1rem solid $color-brand;
+    color: $color-brand;
+  }
+
+  &[data-spacing="small"] {
+    padding: 0.8rem;
+  }
+
+  &[data-spacing="alternative"] {
+    padding: 1rem 1.8rem;
+  }
+
+  &[data-spacing="default"] {
+    padding: 1.2rem 2rem;
+  }
+
+  &[data-icon-only="true"] {
+    aspect-ratio: 1 / 1;
+
+    &[data-spacing="alternative"] {
+      padding: 1rem;
+    }
+
+    &[data-spacing="default"] {
+      padding: 1.2rem;
+    }
   }
 }
 
