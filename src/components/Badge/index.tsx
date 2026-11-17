@@ -1,11 +1,5 @@
 import styles from "./Badge.module.scss";
-
-export type BadgeType = "brand" | "success" | "info" | "warning" | "neutral";
-
-interface BadgeProps {
-  label: string;
-  type: BadgeType;
-}
+import type { BadgeProps } from "./Badge.types";
 
 export default function Badge({ label, type }: BadgeProps) {
   return (
