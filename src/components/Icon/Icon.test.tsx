@@ -1,7 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import Icon from "./Icon";
+import icons, { type IconName } from "./iconRegistry";
 
 describe("Icon", () => {
+  const iconsNames = Object.keys(icons) as IconName[];
+
   it("should render the Icon", () => {
     const { container } = render(<Icon name="calendar" />);
 
@@ -59,5 +62,11 @@ describe("Icon", () => {
     const icon = container.querySelector("svg");
 
     expect(icon).toHaveAttribute("aria-hidden", "true");
+  });
+
+  it.each(iconsNames)("should render icon %s", (icon) => {
+    render(<Icon name={icon} label={icon} />);
+
+    expect(screen.getByLabelText(icon)).toBeInTheDocument();
   });
 });
