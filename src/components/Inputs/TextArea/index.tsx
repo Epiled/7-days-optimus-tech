@@ -14,8 +14,6 @@ export default function TextArea({
   ...textAreaProps
 }: TextAreaProps) {
   const renderIcon = (icon: IconConfig) => {
-    if (!icon) return null;
-
     return (
       <Icon
         {...(icon.props ?? {})}
