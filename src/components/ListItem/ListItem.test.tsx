@@ -62,7 +62,7 @@ describe("ListItem", () => {
     );
 
     const badge = screen.getByText("Success");
-    const feedback = screen.getAllByText("Entrevista agendada");
+    const feedback = screen.getByText("Entrevista agendada");
 
     expect(badge).toBeInTheDocument();
     expect(feedback).toBeInTheDocument();
@@ -72,16 +72,31 @@ describe("ListItem", () => {
     render(
       <ListItem
         title="Developer"
-        favorite
-        next
+        favorite={{ "aria-label": "Adicionar aos favoritos" }}
+        next={{ "aria-label": "Ver detalhes" }}
         button={{ text: "Ver candidatura" }}
       />,
     );
 
-    expect(screen.getByRole("button")).toBeInTheDocument();
-    expect(
-      screen.getByRole("button", { name: "Ver candidatura" }),
-    ).toBeInTheDocument();
-    expect(screen.getAllByRole("button")).toHaveLength(3);
+    const favoriteButton = screen.getByRole("button", {
+      name: "Adicionar aos favoritos",
+    });
+    const nextButton = screen.getByRole("button", {
+      name: "Ver detalhes",
+    });
+    const button = screen.getByRole("button", { name: "Ver candidatura" });
+    const allButtons = screen.getAllByRole("button");
+
+    expect(favoriteButton).toBeInTheDocument();
+    expect(favoriteButton).toHaveAttribute(
+      "aria-label",
+      "Adicionar aos favoritos",
+    );
+
+    expect(nextButton).toBeInTheDocument();
+    expect(nextButton).toHaveAttribute("aria-label", "Ver detalhes");
+
+    expect(button).toBeInTheDocument();
+    expect(allButtons).toHaveLength(3);
   });
 });

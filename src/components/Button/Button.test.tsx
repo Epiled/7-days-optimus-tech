@@ -16,11 +16,11 @@ describe("Button", () => {
 
     const button = screen.getByRole("button");
 
-    expect(button).toHaveTextContent("Botão");
+    expect(button).toHaveTextContent("Button");
   });
 
   it("should render the button with custom text", () => {
-    render(<Button children="Custom Text" variant={"primary"} />);
+    render(<Button text="Custom Text" variant={"primary"} />);
 
     const button = screen.getByRole("button");
 
