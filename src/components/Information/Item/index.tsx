@@ -1,47 +1,46 @@
-// typescript-eslint/no-unused-vars
-import { useState, useEffect, type FC, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import styles from "./Item.module.scss";
 import type { Metric } from "@/types/Metric";
 
-const Infos: FC<Metric> = (props) => {
+const DURATION = 2000;
+const INTERVAL = 16;
+
+export default function InformationItem({ number, thousand, title, text }: Metric) {
   const [count, setCount] = useState<number>(0);
-  const limitRef = useRef<number>(props.number);
-  const duration = 2; // Tempo total em segundos
-  const timeout: number = duration / limitRef.current;
 
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
 
   useEffect(() => {
-    if (inView) {
-      let time = 0;
+    if (!inView || number <= 0) return;
 
-      // Inicializa o timeout quando o componente monta
-      const timeoutId = setInterval(() => {
-        if (count < limitRef.current && time <= duration) {
-          setCount((prevCount) => prevCount + 1);
-          time += timeout;
-        } else {
-          clearInterval(timeoutId);
-        }
-      }, timeout * 1000);
+    const startTime = Date.now();
 
-      // Limpa o timeout quando o componente desmonta
-      return () => clearInterval(timeoutId);
-    }
-  }, [count, limitRef.current, duration, inView]);
+    const intervalId = window.setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / DURATION, 1);
+
+      const nextCount = progress >= 1 ? number : Math.floor(number * progress);
+
+      setCount(nextCount);
+
+      if (progress >= 1) {
+        window.clearInterval(intervalId);
+      }
+    }, INTERVAL);
+
+    return () => window.clearInterval(intervalId);
+  }, [inView, number]);
 
   return (
     <div ref={ref} className={styles.item}>
       <span
         className={styles.item__count}
-      >{`${count}${props.thousand ? "k" : "+"}`}</span>
-      <h2 className={styles.item__title}>{props.title}</h2>
-      <p className={styles.item__text}>{props.text}</p>
+      >{`${count}${thousand ? "k" : "+"}`}</span>
+      <h2 className={styles.item__title}>{title}</h2>
+      <p className={styles.item__text}>{text}</p>
     </div>
   );
-};
-
-export default Infos;
+}

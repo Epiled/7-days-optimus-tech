@@ -1,0 +1,80 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__input {
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    &[type="radio"] {
+      appearance: none;
+      border: 0.1rem solid $color-neutral-gray-medium;
+      border-radius: 50%;
+      background: $color-neutral-white;
+
+      display: grid;
+      place-content: center;
+
+      &::before {
+        content: "";
+        width: 0.9rem;
+        height: 0.9rem;
+        border-radius: 50%;
+        background: $color-primary;
+        transform: scale(0);
+        transition: transform 150ms ease-in-out;
+      }
+
+      &:checked {
+        border-color: $color-primary;
+
+        &::before {
+          transform: scale(1);
+        }
+      }
+
+      &:focus-visible {
+        outline: 0.2rem solid $color-primary;
+        outline-offset: 0.3rem;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $color-neutral-white;
+    border: 0.1rem solid $color-neutral-gray-medium;
+
+    &[data-state="active"] {
+      border: 0.1rem solid $color-primary;
+      background: $color-primary;
+    }
+  }
+
+  &__label {
+    color: $color-text-primary;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+}

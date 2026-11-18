@@ -48,9 +48,11 @@ export default function Form() {
           />
           <span className={styles.form__feedback}>{feedback}</span>
         </div>
-        <Button type="submit" disabled={pending}>
-          {pending ? "Enviando..." : "Cadastrar"}
-        </Button>
+        <Button
+          type="submit"
+          disabled={pending}
+          text={pending ? "Enviando..." : "Cadastrar"}
+        />
       </form>
       <span className={styles.form__copyright}>
         © {year} OptimusTech. Todos os direitos reservados.

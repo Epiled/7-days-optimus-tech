@@ -1,0 +1,17 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  border: 0.1rem solid $color-neutral-gray;
+  border-radius: 0.4rem;
+  background: $color-surface-base;
+  color: $color-text-accessibility;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  text-align: center;
+}

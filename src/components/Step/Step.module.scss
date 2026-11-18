@@ -1,0 +1,47 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1;
+  font-size: 1.4rem;
+
+  &__stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.8rem;
+    color: $color-text-secondary;
+    background: transparent;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 0.1rem solid $color-neutral-gray-medium;
+    font-weight: 400;
+
+    &[data-variant="active"] {
+      color: $color-neutral-white;
+      background: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  &__label {
+    color: $color-text-secondary;
+    font-weight: 500;
+    line-height: 2.4rem;
+
+    &[data-variant="active"] {
+      color: $color-primary;
+    }
+  }
+
+  &[data-line="true"]::after {
+    content: "";
+    display: block;
+    height: 0.1rem;
+    background: $color-neutral-gray-medium;
+    width: 100%;
+  }
+}

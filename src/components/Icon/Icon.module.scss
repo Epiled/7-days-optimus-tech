@@ -1,0 +1,44 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: middle;
+
+  &[data-color="inherit"] {
+    color: inherit;
+  }
+
+  &[data-color="brand"] {
+    color: $color-primary;
+  }
+
+  &[data-color="neutral-white"] {
+    color: $color-neutral-white;
+  }
+
+  &[data-color="text-primary"] {
+    color: $color-text-primary;
+  }
+
+  &[data-color="text-secondary"] {
+    color: $color-text-secondary;
+  }
+
+  &[data-color="success"] {
+    color: $color-status-success-foreground;
+  }
+
+  &[data-color="info"] {
+    color: $color-status-info-foreground;
+  }
+
+  &[data-color="warning"] {
+    color: $color-status-warning-foreground;
+  }
+
+  &[data-color="neutral"] {
+    color: $color-status-neutral-foreground;
+  }
+}

@@ -128,9 +128,14 @@ table {
   border-spacing: 0;
 }
 
-* {
+:root,
+html {
   font-size: 62.5%;
+}
+
+* {
   box-sizing: border-box;
+  font-family: Inter, "sans-serif";
 }
 
 html * {

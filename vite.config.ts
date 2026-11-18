@@ -15,5 +15,24 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["./src/setupTests.ts"],
+    coverage: {
+      provider: "v8",
+
+      reporter: ["text", "html"],
+
+      include: ["src/**/*.{ts,tsx}"],
+
+      exclude: [
+        "src/**/*.test.{ts,tsx}",
+        "src/**/*.spec.{ts,tsx}",
+        "src/**/*.type.ts",
+        "src/**/*.types.ts",
+        "src/**/*.d.ts",
+        "src/types/**",
+        "src/interfaces/**",
+        "src/main.tsx",
+        "src/App.tsx",
+      ],
+    },
   },
 });

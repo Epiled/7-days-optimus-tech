@@ -1,0 +1,25 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+.tab {
+  background: transparent;
+  outline: none;
+  margin: 0;
+  width: 100%;
+
+  color: $color-text-secondary;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-align: center;
+
+  border-width: 0;
+  border-bottom: 0.2rem solid $color-border;
+
+  padding: 0 1.2rem 2rem;
+
+  &[data-state="active"] {
+    color: $color-brand;
+    border-bottom: 0.2rem solid $color-brand;
+  }
+}
