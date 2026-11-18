@@ -43,7 +43,7 @@ export default function Field({
         {inputProps.required && (
           <span className={styles.field__required}>*</span>
         )}
-        {optional && (
+        {!inputProps.required && optional && (
           <span className={styles.field__optional}>({optional})</span>
         )}
       </div>
