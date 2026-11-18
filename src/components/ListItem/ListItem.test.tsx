@@ -7,7 +7,8 @@ describe("ListItem", () => {
       <ListItem
         imagicon
         title={"Desenvolvedor(a) Front-end"}
-        supportText={"Candidatura em 01/01/2001"}
+        supportText={"Optimus Tech"}
+        text="Candidatura em 01/01/2001"
       />,
     );
 

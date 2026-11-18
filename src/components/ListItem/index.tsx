@@ -6,7 +6,7 @@ import type { ImagiconProps } from "../Imagicon/Imagicon.types";
 import Metadate from "../Metadate";
 import Tag from "../Tag";
 import styles from "./ListItem.module.scss";
-import type { ListItemProps } from "./ListItem.type";
+import type { ListItemProps } from "./ListItem.types";
 
 export default function ListItem({
   imagicon,
