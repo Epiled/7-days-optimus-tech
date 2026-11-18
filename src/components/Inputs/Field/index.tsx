@@ -13,8 +13,6 @@ export default function Field({
   ...inputProps
 }: FieldProps) {
   const renderIcon = (icon: IconConfig) => {
-    if (!icon) return null;
-
     return (
       <Icon
         {...(icon.props ?? {})}
