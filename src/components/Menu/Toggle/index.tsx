@@ -1,14 +1,13 @@
 import classNames from "classnames";
 import styles from "./Toggle.module.scss";
-
-interface ToggleProps {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import type { ToggleProps } from "./Toggle.types";
 
 export default function Toggle({ isOpen, setIsOpen }: ToggleProps) {
   return (
-    <div
+    <button
+      type="button"
+      aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+      aria-expanded={isOpen}
       className={classNames({
         [styles.toggle]: true,
         [styles.open]: isOpen,
@@ -18,6 +17,6 @@ export default function Toggle({ isOpen, setIsOpen }: ToggleProps) {
       <div className={styles.bar1}></div>
       <div className={styles.bar2}></div>
       <div className={styles.bar3}></div>
-    </div>
+    </button>
   );
 }
